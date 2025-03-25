@@ -1,0 +1,386 @@
+body{
+    height: 100vh;
+  }
+
+  #header-inner{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+  }
+
+  header .util-menu{
+    height: 30px;
+    gap: 20px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    display: none;
+
+  }
+  header .util-menu a{
+    position: relative;
+    display: block
+  }
+  .util-menu a:nth-child(1){
+    color: #fff;
+  }
+  .util-menu a:nth-child(1):before{
+    content: '';
+    position: absolute;
+    top: 0;  
+    left: 0;  
+    width: 80px;
+    height:20px;
+    padding: 5px;
+    margin-left: -10px;
+    background-color: #222;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  header .util-menu a:nth-child(1)::after{
+    content: '▼';
+    font-size: 14px;
+    padding-left: 10px;
+    color: #fff;
+  }
+  header .util-menu a:nth-child(2)::before{
+    content: '|';
+    padding-right: 20px;
+  }
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* 로고 + 메뉴바 */
+  header .logo img{
+    width: 500px;
+    margin-bottom: 10px;}
+    header ul{
+    display: flex;
+    column-gap: 40px;
+  }
+  header ul li{
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    display: none;
+  }
+  body{
+    background-color: aliceblue;
+  }
+
+/* fashti */
+.fashion-inner{
+  background-color: #222;
+}
+.fashion-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fashion-inner h2{
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+}
+.fashion-menu{
+  display: flex;
+  font-size: 15px;
+  column-gap: 40px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+
+/* beauty */
+#beauty{
+  background: url(../image/background3.jpg) no-repeat center/cover fixed ; 
+  height: 900px;
+  position: relative;
+  border: 3px solid #ddd;
+  border-width: 3px 0;
+}
+#beauty::before{
+    content: '';
+    background: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+
+/* ___________________________________________ */
+
+
+.beauty-items{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  flex: 1;
+}
+
+.box{
+  display: flex;
+  justify-content: flex-start;
+  width: 700px;
+  cursor: pointer;
+  position: relative;
+}
+  .box:nth-child(odd){flex-direction: row;;}
+  .box:nth-child(even){flex-direction: row-reverse;}
+
+
+.box .desc{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.beauty-menu{
+  font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    /* display: inline-block;
+    display: none; */
+    margin: 50px 0;
+    color: #fff;
+    position: relative;
+    font-weight: normal;
+}
+
+/* peopel------------------------------------------------- */
+#pepole-now{
+  background-color: #F1DD96;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.people-inner{flex: 2;}
+.right-text{flex: 1;
+  height: inherit;
+}
+
+.hover-img .hover-img2, .hover-img3{
+  display: none;
+}
+/* 첫 번째 이미지는 기본적으로 보이게 설정 */
+
+
+.hover-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 8px;}
+
+
+  /* life */
+  #lifestyle {
+    height: 900px;
+    background: url(../image/back4.jpg) no-repeat center/cover fixed;
+    position: relative;
+  }
+  
+  .life-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .life-card div {
+    margin-top: 5%;
+    background-color: #fff;
+    width: 350px;
+    height: inherit; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  
+  .life-card .life img {
+    display: block;
+    width: 500px; 
+    height: 450px; 
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+  
+  .life-title {
+    /* border: 1px solid #000; */
+    width: 100px;
+    height: 600px;
+  }
+
+  /* culture--------------------------- */
+  #culture{
+    background-color: #F1DD96;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .culture-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cult{
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid #000; */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    transition: 0.35s;
+  }
+
+  .cult img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .cult .sub{
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+  }
+
+  /* video */
+  #video{
+    background-color: #222;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #video h1{
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .video-inner{
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-image{
+    flex: 1;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* width: 500px; */
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  .left-image h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    writing-mode: vertical-rl;
+    margin: 20px 0;
+  }
+
+  .right-item{
+    display: flex;
+    justify-content: space-between;
+    flex: 4;
+    cursor: pointer;
+    transition: flex 0.3s ease;
+  }
+  
+  .right-item li{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0.5;
+    width: 400px;
+    height: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  
+  .right-item li img{
+    width: max-content;
+    height: auto;
+    object-fit: cover; 
+  }
+
+  /* footer */
+  footer{
+    height: 100px;
+    background-color: #fff;
+  }
+
+  address{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 40px;
+  }
