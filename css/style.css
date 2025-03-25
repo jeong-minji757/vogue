@@ -9,15 +9,6 @@
 html{
   scroll-behavior: smooth}
 
-.goto-top{
-  position: fixed;/* 둥둥 */
-  right: 20px;
-  bottom: 20px;
-  font-size: 38px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #fff;
-}
 
 header{
   position: fixed;
