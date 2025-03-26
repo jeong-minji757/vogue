@@ -16,6 +16,11 @@ body{
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     z-index: 10;
+    transition: 0.5s;
+  }
+
+  .goto-top:hover{
+    background-color: #F1DD96;
   }
 
   header .util-menu{
@@ -86,7 +91,7 @@ body{
     background-color: aliceblue;
   }
 
-/* fashion */
+/* fashion ________________________ */
 .fashion-inner{
   background-color: #222;
 }
@@ -113,8 +118,40 @@ body{
   color: #fff;
 }
 
+.fashion-menu li{
+  display: inline-block;
+  width: auto;
+  position: relative;
+  font-size: 18px;
+  z-index: 10;
+}
+.fashion-menu li::before{
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: darkorange;
+  transition: 0.5s;
+  z-index: -1;
+}
 
-/* beauty */
+.fashion-menu li:hover::before {
+  width: 100%
+}
+
+.fashion-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  position: relative;
+  margin: 40px 0;
+}
+
+
+/* beauty __________________________ */
 #beauty{
   background: url(../image/background3.jpg) no-repeat center/cover fixed ; 
   height: 900px;
@@ -131,10 +168,6 @@ body{
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); 
 }
-
-
-/* ___________________________________________ */
-
 
 .beauty-items{
   display: flex;
@@ -183,7 +216,7 @@ body{
     font-weight: normal;
 }
 
-/* peopel------------------------------------------------- */
+/* people ____________________________________ */
 #pepole-now{
   background-color: #F1DD96;
   height: 750px;
@@ -201,7 +234,6 @@ body{
 .hover-img .hover-img2, .hover-img3{
   display: none;
 }
-/* 첫 번째 이미지는 기본적으로 보이게 설정 */
 
 
 .hover-text {
@@ -214,7 +246,7 @@ body{
   border-radius: 8px;}
 
 
-  /* life */
+  /* life _______________________________________*/
   #lifestyle {
     height: 900px;
     background: url(../image/back4.jpg) no-repeat center/cover fixed;
@@ -263,7 +295,7 @@ body{
     height: 600px;
   }
 
-  /* culture--------------------------- */
+  /* culture _______________________________________ */
   #culture{
     background-color: #F1DD96;
     height: 800px;

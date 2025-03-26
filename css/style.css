@@ -143,7 +143,6 @@ main{
   width: max-content;
   border-radius: 10px;}
 
-  /*  */
 .overlay .image:hover p::before {
   content: 'Guerlain Kiss Be Glow Oil 258 rose glow';
   font-family: "Oregano", cursive;
@@ -256,29 +255,8 @@ main{position: relative;
   color: #F1DD96;
   cursor: pointer;
 }
-/* 패션 상단 메뉴 설정  */
-.fashion-menu li{
-  display: inline-block;
-  width: auto;
-  position: relative;
-  font-size: 18px;
-  z-index: 10;
-}
-.fashion-menu li::before{
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 0;
-  height: 10px;
-  background-color: darkorange;
-  transition: 0.5s;
-  z-index: -1;
-}
 
-.fashion-menu li:hover::before {
-  width: 100%
-}
+/* 패션 상단 메뉴  */
 
 .fashion-menu li:nth-child(1){
   padding: 3px 10px;
@@ -288,14 +266,6 @@ main{position: relative;
   border-radius: 5px;
 }
 
-.fashion-items{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 40px;
-  position: relative;
-  margin: 40px 0;
-}
 
 /* 360도 돌아가는 카드 */
 .item-left{
@@ -380,7 +350,6 @@ main{position: relative;
   margin-top: -10px;
 }
 .back a{
-  /* border: 1px solid #000; */
   display: block;
   padding: 10px 90px;
   margin-top: 5px;
@@ -589,9 +558,7 @@ main{position: relative;
   transition: 0.5s;
 }
 
-.beauty-menu li:hover::before {
-  width: 100%
-}
+.beauty-menu li:hover::before {width: 100%}
 
 .beauty-menu li:nth-child(1){
   border: 1px solid #000;
@@ -686,7 +653,7 @@ main{position: relative;
   background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
 }
 
-/* people */
+/* people_________________________________ */
 .people-content{
   display: flex;
   flex-direction: column;
@@ -839,7 +806,7 @@ main{position: relative;
   font-weight: 600;
 }
 
-/* life */
+/* life______________________________________________ */
 .life-btn {
   display: flex;
   justify-content: flex-start; 
