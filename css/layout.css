@@ -70,6 +70,9 @@ body{
     align-items: center;
   }
   /* 로고 + 메뉴바 */
+  .logo{
+    filter: invert(99%) sepia(0%) saturate(4250%) hue-rotate(268deg) brightness(124%) contrast(94%);
+  }
   header .logo img{
     width: 500px;
     margin-bottom: 10px;}

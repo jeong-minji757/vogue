@@ -44,8 +44,12 @@ main{
 #wrap:hover .util-menu{
   display: flex;
 }
+#wrap:hover .logo{
+
+  filter: invert(0%) sepia(99%) saturate(0%) hue-rotate(136deg) brightness(93%) contrast(100%);
+}
 #wrap:hover .logo img{
-  width: 150px
+  width: 150px;
 }
 #wrap:hover header .top-menu li{
   display: block;
